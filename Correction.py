@@ -12,8 +12,8 @@ FIREBASE_DB_BASE_URL = getenv('FIREBASE_DB_BASE_URL')
 FIREBASE_CREDS_FILE = getenv('FIREBASE_CREDS_FILE')
 
 LOG_FILE = "Correction.log"         # log file path
-CHECK_INTERVAL = 10                 # seconds between checks
-UNCHANGED_LIMIT = 6                 # consecutive unchanged checks before reset
+CHECK_INTERVAL = 3600                 # seconds between checks
+UNCHANGED_LIMIT = 24                 # consecutive unchanged checks before reset
 
 
 logging.basicConfig(
