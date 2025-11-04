@@ -13,7 +13,7 @@ FIREBASE_CREDS_FILE = getenv('FIREBASE_CREDS_FILE')
 
 LOG_FILE = "Correction.log"         # log file path
 CHECK_INTERVAL = 10                 # seconds between checks
-UNCHANGED_LIMIT = 3                 # consecutive unchanged checks before reset
+UNCHANGED_LIMIT = 6                 # consecutive unchanged checks before reset
 
 
 logging.basicConfig(
