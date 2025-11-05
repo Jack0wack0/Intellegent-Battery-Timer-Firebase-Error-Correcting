@@ -65,6 +65,9 @@ def perform_reset():
 
         # Mark the wipe in status
         update_status_field("wiped", True)
+        update_status_field("COM_PORT1", "Disconnected")
+        update_status_field("COM_PORT2", "Disconnected")
+        update_status_field("CPU_Temp", "0, offline")
         global last_wiped_value
         last_wiped_value = last_updated_ref.get()
 
